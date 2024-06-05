@@ -13,7 +13,7 @@ const Header = () => {
           <h1 className="font-extrabold text-2xl ml-4">
             <Link to="/">LV</Link>
           </h1>
-          <p className="font-bold text-md lg:text-lg 2xl:text-2xl">
+          <p className="font-bold text-[4.48vmin] lg:text-lg 2xl:text-2xl">
             <Link to="/">VentureLink Utility</Link>
           </p>
         </div>

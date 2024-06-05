@@ -10,7 +10,7 @@ const Features = () => {
         style={myStyle}
       >
         <p className="text-[13vmin] font-bold overflow-hidden mt-4">Features</p>
-        <div className="mt-4 cardHolder w-[100vw] pb-2 flex justify-center  items-center flex-wrap gap-x-4 gap-y-4 2xl:space-y-0 font-poppins">
+        <div className="mt-4 cardHolder w-[100vw] pb-2 flex justify-center  items-center flex-wrap gap-x-5 gap-y-4 2xl:space-y-0 font-poppins">
           <div className="card bg-white opacity-95 w-[40vmin] h-[50vmin] flex flex-col justify-center items-center">
             <div className="imgHolder  h-[30vmin] w-[30vmin] ">
               <img

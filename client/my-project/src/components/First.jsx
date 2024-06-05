@@ -62,7 +62,7 @@ const First = () => {
                 navigate("/FirstLogin");
               }}
             >
-              <Link to="/FirstLogin">Login</Link>
+              <Link to="/FirstLogin">Gallery</Link>
             </button>
           </div>
         </div>

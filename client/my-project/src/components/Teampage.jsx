@@ -16,26 +16,30 @@ const Teampage = () => {
       </div>
 
       <div className="mt-4 cardHolder w-[100vw] pb-2 flex justify-center  items-center flex-wrap gap-x-7 gap-y-4 2xl:space-y-0 font-poppins">
-        <div className="card bg-white shadow-2xl opacity-95 w-[40vmin] h-[50vmin] flex  flex-col justify-center items-center">
-          <div className="imgHolder h-[30vmin] w-[30vmin] rounded-xl ">
-            <img
-              src="./MH.jpg"
-              className="max-w-full max-h-full object-contain"
-            ></img>
-          </div>
-          <p className="mt-6 font-medium text-[3vmin]">
+        <div className="card bg-white  opacity-95 w-[40vmin] h-[50vmin] flex  flex-col justify-center items-center">
+          <div>
+            <div className="imgHolder h-[40vmin] w-[40vmin]  ">
+              <img
+                src="./MH.jpg"
+                className="max-w-full max-h-full object-contain"
+              ></img>
+            </div>
+          </div>{" "}
+          <p className="mt-1 font-medium text-[3vmin] ml-[-5vmin]">
             Founder & Business Head
           </p>
         </div>
-        <div className="card  bg-white shadow-2xl  opacity-95 w-[45vmin] h-[50vmin] flex flex-col justify-center items-center">
-          <div className="imgHolder  h-[30vmin] w-[30vmin]  rounded-xl ">
-            <img
-              src="./TH.jpg"
-              className="max-w-full max-h-full object-contain"
-            ></img>
-          </div>
-          <p className="mt-6 font-medium text-[3vmin]">
-            Founder & Technical Head
+        <div className="card bg-white  opacity-95 w-[40vmin] h-[50vmin] flex  flex-col justify-center items-center">
+          <div>
+            <div className="imgHolder h-[40vmin] w-[40vmin]  ">
+              <img
+                src="./TH.jpg"
+                className="max-w-full max-h-full object-contain"
+              ></img>
+            </div>
+          </div>{" "}
+          <p className="mt-1 font-medium text-[3vmin] ml-[-5vmin]">
+            Founder & Business Head
           </p>
         </div>
       </div>

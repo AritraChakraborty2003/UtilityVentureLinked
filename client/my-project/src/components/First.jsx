@@ -3,6 +3,7 @@ import Header from "./Header";
 import { useNavigate } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import AboutPage from "./AboutPage";
+import Features from "./Features";
 
 /* eslint-disable no-unreachable */
 const First = () => {
@@ -45,14 +46,24 @@ const First = () => {
             </span>{" "}
             )
           </p>
-          <button
-            className="bg-[#ff1010]  text-white text-2xl p-2 w-[30vmin] md:w-[20vmin]"
-            onClick={() => {
-              navigate("/FirstLogin");
-            }}
-          >
-            <Link to="/FirstLogin">Login</Link>
-          </button>
+          <div className="flex mt-4">
+            <button
+              className="bg-[#ff1010] opacity-80 text-white text-2xl p-2 w-[30vmin] md:w-[20vmin] "
+              onClick={() => {
+                navigate("/FirstLogin");
+              }}
+            >
+              <Link to="/FirstLogin">Login</Link>
+            </button>
+            <button
+              className="ml-5 bg-white text-red-500 border-red-500 text-2xl p-2 w-[30vmin] md:w-[20vmin]"
+              onClick={() => {
+                navigate("/FirstLogin");
+              }}
+            >
+              <Link to="/FirstLogin">Login</Link>
+            </button>
+          </div>
         </div>
         <div className="rightPart lg:mt-[15vmin]  w-[70vmin] lg:h-[100vmin] lg:p-10  flex justify-center items-center">
           <div className="mt-[3vmin] lg:mt-[15vmin]  lg:ml-[4vmin]  imgHolder h-[65vmin] w-[90vw] lg:w-[80vmin] lg:h-[55vmin] 2xl:mt-[10vmin]">
@@ -64,6 +75,7 @@ const First = () => {
         </div>
       </div>
       <AboutPage />
+      <Features />
     </>
   );
 };

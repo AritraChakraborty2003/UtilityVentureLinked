@@ -68,7 +68,7 @@ const FirstLogin = () => {
         style={myStyle}
       >
         <div className="formBody bg-white pb-3 lg:w-[60vmin]">
-          <div className="headerText w-full bg-black text-white p-1 lg:h-[15vmin] 2xl:h-[10vmin] flex flex-col justify-content pl-2 pt-1">
+          <div className="headerText w-full bg-black text-white p-1 lg:h-[10vmin] 2xl:h-[10vmin] flex flex-col justify-content pl-2 pt-1">
             <p className="text-xl mt-2 overflow-y-hidden font-bold">
               Login Form
             </p>

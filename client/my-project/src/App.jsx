@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import MoMForm from "./components/MoMForm";
 import UiDoc from "./components/UiDoc";
 import First from "./components/First";
+import Teampage from "./components/Teampage";
 import FirstLogin from "./components/FirstLogin";
 import TechnicalDoc from "./components/TechnicalDoc";
 import HiringDoc from "./components/Hiringdoc";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/FirstLogin" element={<FirstLogin />}></Route>
         <Route path="/Uidoc" element={<UiDoc />}></Route>
         <Route path="/technicalDoc" element={<TechnicalDoc />}></Route>
+        <Route path="/Team" element={<Teampage />}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -1,9 +1,11 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable no-const-assign */
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Header = () => {
   const [notHidden, setnotHidden] = useState(false);
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="w-full h-[15vmin] md:h-[10vmin] bg-black text-white flex overflow-hidden pb-2">
@@ -11,7 +13,7 @@ const Header = () => {
           <h1 className="font-extrabold text-2xl ml-4">
             <Link to="/">LV</Link>
           </h1>
-          <p className="font-bold text-lg lg:text-2xl">
+          <p className="font-bold text-lg 2xl:text-2xl">
             <Link to="/">VentureLink Utility</Link>
           </p>
         </div>
@@ -23,15 +25,31 @@ const Header = () => {
                 <p>
                   <Link to="/FirstLogin">Login</Link>
                 </p>
-                <p>Main-Website</p>
-                <p>Rules Page</p>
+                <p>About</p>
+
+                <p
+                  onClick={() => {
+                    navigate("/Team");
+                  }}
+                >
+                  Our Team
+                </p>
+                <p>Contact</p>
               </div>
             </>
           )) || (
             <div className="iconHolder h-[10vmin] flex items-center space-x-12 text-2xl font-medium pb-2">
               <p>Login</p>
-              <p>Main-Website</p>
+              <p>About</p>
               <p>Rules Page</p>
+              <p>Contact</p>
+              <p
+                onClick={() => {
+                  navigate("/Team");
+                }}
+              >
+                Our Team
+              </p>
             </div>
           )}
         </div>
@@ -54,7 +72,14 @@ const Header = () => {
           <ol className="flex flex-col gap-y-2 pl-2 pb-2">
             <li>Login</li>
             <li>Main-Website</li>
-            <li>Rules Page</li>
+            <li
+              onClick={() => {
+                navigate("/Team");
+              }}
+            >
+              Our Team
+            </li>
+            <li>Contact</li>
           </ol>
         </div>
       ) : null}

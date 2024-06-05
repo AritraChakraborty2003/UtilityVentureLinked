@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import Header from "./Header";
 import { useNavigate } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+
 /* eslint-disable no-unreachable */
 const First = () => {
   const navigate = useNavigate();
+
   const myStyle = {
     background: "orange",
     font: "poppins",
@@ -22,7 +24,7 @@ const First = () => {
         className=" md:h-[calc(100vh-10vmin)] w-[100vw] flex justify-center items-center flex-wrap-reverse  p-4 overflow-hidden"
         style={myStyle}
       >
-        <div className="leftPart flex flex-col lg:justify-center lg:items-start  w-[100vw] lg:w-[83vmin] pb-3 lg:h-[100vmin] sm:mt-[-4vmin]">
+        <div className="leftPart flex flex-col lg:justify-center lg:items-start  w-[100vw] lg:w-[83vmin] pb-3 lg:h-[100vmin] lg:mt-[15vmin] sm:mt-[-4vmin]">
           <p className="text-[14vmin] lg:mt-[8vmin] lg:text-[12vmin] text-black pb-1 lg:pb-3 font-extrabold">
             Welcome To,
           </p>
@@ -51,8 +53,8 @@ const First = () => {
             <Link to="/FirstLogin">Login</Link>
           </button>
         </div>
-        <div className="rightPart w-[70vmin] lg:h-[100vmin] lg:p-10  flex justify-center items-center">
-          <div className="mt-[3vmin] lg:mt-[8vmin]  lg:ml-[4vmin]  imgHolder h-[65vmin] w-[90vw] lg:w-[74vmin] lg:h-[55vmin] 2xl:mt-[10vmin]">
+        <div className="rightPart lg:mt-[15vmin]  w-[70vmin] lg:h-[100vmin] lg:p-10  flex justify-center items-center">
+          <div className="mt-[3vmin] lg:mt-[15vmin]  lg:ml-[4vmin]  imgHolder h-[65vmin] w-[90vw] lg:w-[80vmin] lg:h-[55vmin] 2xl:mt-[10vmin]">
             <img
               src="./startup.png"
               className="max-w-full max-h-full object-contain"

@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-no-undef */
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import { useNavigate } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import AboutPage from "./AboutPage";
 import Features from "./Features";
-
+import Footer from "./Footer";
 /* eslint-disable no-unreachable */
 const First = () => {
   const navigate = useNavigate();
@@ -76,6 +77,7 @@ const First = () => {
       </div>
       <AboutPage />
       <Features />
+      <Footer />
     </>
   );
 };

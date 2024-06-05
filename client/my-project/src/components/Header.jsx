@@ -35,7 +35,7 @@ const Header = () => {
             </div>
           )}
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden overflow-hidden">
           <div className="iconHolder h-[15vmin] md:h-[10vmin] flex items-center space-x-6 text-xl font-medium">
             <img
               src="./ham.png"

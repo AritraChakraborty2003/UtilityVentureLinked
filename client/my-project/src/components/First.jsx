@@ -52,7 +52,7 @@ const First = () => {
           </button>
         </div>
         <div className="rightPart w-[70vmin] lg:h-[100vmin] lg:p-10  flex justify-center items-center">
-          <div className="mt-[3vmin] lg:mt-[8vmin]  lg:ml-[4vmin]  imgHolder h-[70vmin] w-[70vmin] lg:w-[60vmin] lg:h-[60vmin]">
+          <div className="mt-[3vmin] lg:mt-[8vmin]  lg:ml-[4vmin]  imgHolder h-[70vmin] w-[70vmin] lg:w-[74vmin] lg:h-[55vmin] 2xl:mt-[10vmin]">
             <img
               src="./startup.png"
               className="max-w-full max-h-full object-contain"

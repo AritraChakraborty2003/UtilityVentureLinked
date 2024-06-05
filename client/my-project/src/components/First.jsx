@@ -19,7 +19,7 @@ const First = () => {
     <>
       <Header />
       <div
-        className="h-[calc(100vh-15vmin)] md:h-[calc(100vh-10vmin)] w-[100vw] flex justify-center items-center flex-wrap-reverse  p-4 overflow-hidden"
+        className=" md:h-[calc(100vh-10vmin)] w-[100vw] flex justify-center items-center flex-wrap-reverse  p-4 overflow-hidden"
         style={myStyle}
       >
         <div className="leftPart flex flex-col lg:justify-center lg:items-start  w-[100vw] lg:w-[83vmin] pb-3 lg:h-[100vmin] sm:mt-[-4vmin]">

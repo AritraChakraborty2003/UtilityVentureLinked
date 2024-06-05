@@ -10,7 +10,7 @@ const First = () => {
     font: "poppins",
   };
   const [text] = useTypewriter({
-    words: ["Businesses", "startups", "lives"],
+    words: ["Businesses", "Entreprenership", "lives"],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 90,
@@ -23,17 +23,17 @@ const First = () => {
         style={myStyle}
       >
         <div className="leftPart flex flex-col lg:justify-center lg:items-start  w-[83vmin] pb-3 lg:h-[100vmin] sm:mt-[-4vmin]">
-          <p className="lg:mt-[8vmin] text-[13.5vmin] lg:text-[12vmin] text-black pb-3 font-extrabold">
+          <p className="lg:mt-[8vmin] text-[12vmin] text-black pb-3 font-extrabold">
             Welcome To,
           </p>
 
-          <p className="text-[10vmin] lg:text-[8.5vmin] text-black pb-3 font-medium mt-[-4vmin]">
+          <p className="text-[8.5vmin] text-black pb-3 font-medium mt-[-4vmin]">
             Venture Linked
           </p>
-          <p className="text-[5vmin] lg:text-[3.5vmin] text-black pb-3 font-medium mt-[-2vmin]">
+          <p className="text-[3.5vmin] text-black pb-3 font-medium mt-[-2vmin]">
             Utility Software Solution
           </p>
-          <p className="text-[3.75vmin] lg:text-[2.75vmin] text-black pb-3 font-normal">
+          <p className="text-[3vmin] lg:text-[2.75vmin] text-black pb-3 font-normal">
             ( Connecting entrpreneurs evolving{" "}
             <span style={{ color: "black", fontWeight: "bold" }}> {text}</span>
             <span style={{ color: "black" }}>

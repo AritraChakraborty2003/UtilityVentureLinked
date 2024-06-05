@@ -13,7 +13,7 @@ const Header = () => {
           <h1 className="font-extrabold text-2xl ml-4">
             <Link to="/">LV</Link>
           </h1>
-          <p className="font-bold text-lg 2xl:text-2xl">
+          <p className="font-bold text-md lg:text-lg 2xl:text-2xl">
             <Link to="/">VentureLink Utility</Link>
           </p>
         </div>
@@ -53,7 +53,7 @@ const Header = () => {
             </div>
           )}
         </div>
-        <div className="lg:hidden overflow-hidden">
+        <div className="lg:hidden overflow-hidden ml-[2.65vmin]">
           <div className="iconHolder h-[15vmin] md:h-[10vmin] flex items-center space-x-6 text-xl font-medium">
             <img
               src="./ham.png"

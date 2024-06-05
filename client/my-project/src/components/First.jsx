@@ -19,7 +19,7 @@ const First = () => {
     <>
       <Header />
       <div
-        className="h-[calc(100vh-15vmin)] md:h-[calc(100vh-10vmin)] w-[100vw] flex justify-center items-center flex-wrap-reverse p-4 overflow-hidden"
+        className="h-[calc(100vh-15vmin)] md:h-[calc(100vh-10vmin)] w-[100vw] flex justify-center items-center flex-wrap-reverse  p-4 overflow-hidden"
         style={myStyle}
       >
         <div className="leftPart flex flex-col lg:justify-center lg:items-start  w-[83vmin] pb-3 lg:h-[100vmin]">
@@ -51,8 +51,8 @@ const First = () => {
             <Link to="/FirstLogin">Login</Link>
           </button>
         </div>
-        <div className="rightPart w-[70vmin] lg:h-[100vmin] p-5 lg:p-10  flex justify-center items-center">
-          <div className="mt-[3vmin] lg:mt-[8vmin]  lg:ml-[4vmin]  imgHolder w-[60vmin] h-[40vmin]">
+        <div className="rightPart w-[70vmin] lg:h-[100vmin] lg:p-10  flex justify-center items-center">
+          <div className="mt-[3vmin] lg:mt-[8vmin]  lg:ml-[4vmin]  imgHolder h-[70vmin] w-[70vmin] lg:w-[60vmin] lg:h-[60vmin]">
             <img
               src="./startup.png"
               className="max-w-full max-h-full object-contain"

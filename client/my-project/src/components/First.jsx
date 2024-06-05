@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "./Header";
 import { useNavigate } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import AboutPage from "./AboutPage";
 
 /* eslint-disable no-unreachable */
 const First = () => {
@@ -62,6 +63,7 @@ const First = () => {
           </div>
         </div>
       </div>
+      <AboutPage />
     </>
   );
 };

@@ -34,15 +34,15 @@ const Header = () => {
                 >
                   Our Team
                 </p>
-                <p>Contact</p>
+                <p>Features</p>
               </div>
             </>
           )) || (
             <div className="iconHolder h-[10vmin] flex items-center space-x-12 text-2xl font-medium pb-2">
               <p>Login</p>
               <p>About</p>
-              <p>Rules Page</p>
-              <p>Contact</p>
+
+              <p>Features</p>
               <p
                 onClick={() => {
                   navigate("/Team");
@@ -79,7 +79,7 @@ const Header = () => {
             >
               Our Team
             </li>
-            <li>Contact</li>
+            <li>Features</li>
           </ol>
         </div>
       ) : null}

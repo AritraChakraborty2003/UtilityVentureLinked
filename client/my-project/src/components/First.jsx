@@ -24,7 +24,7 @@ const First = () => {
         className=" md:h-[calc(100vh-10vmin)] w-[100vw] flex justify-center items-center flex-wrap-reverse  p-4 overflow-hidden"
         style={myStyle}
       >
-        <div className="leftPart flex flex-col lg:justify-center lg:items-start  w-[100vw] lg:w-[83vmin] pb-3 lg:h-[100vmin] lg:mt-[15vmin] sm:mt-[-4vmin]">
+        <div className="leftPart flex flex-col lg:justify-center lg:items-start  w-[100vw] sm:h-[40vh] lg:w-[83vmin] pb-3 pt-7 lg:h-[100vmin] lg:mt-[15vmin] sm:mt-[-4vmin]">
           <p className="text-[14vmin] lg:mt-[8vmin] lg:text-[12vmin] text-black pb-1 lg:pb-3 font-extrabold">
             Welcome To,
           </p>

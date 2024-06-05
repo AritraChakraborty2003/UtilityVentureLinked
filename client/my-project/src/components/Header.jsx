@@ -53,7 +53,7 @@ const Header = () => {
             </div>
           )}
         </div>
-        <div className="lg:hidden overflow-hidden ml-[3.15vmin]">
+        <div className="lg:hidden overflow-hidden ml-[4.25vmin]">
           <div className="iconHolder h-[15vmin] md:h-[10vmin] flex items-center space-x-6 text-xl font-medium">
             <img
               src="./ham.png"

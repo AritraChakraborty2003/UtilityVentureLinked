@@ -10,7 +10,7 @@ const First = () => {
     font: "poppins",
   };
   const [text] = useTypewriter({
-    words: ["Businesses", "Entreprenership", "lives"],
+    words: ["Business", "Startups", "Lives"],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 90,
@@ -22,18 +22,18 @@ const First = () => {
         className="h-[calc(100vh-15vmin)] md:h-[calc(100vh-10vmin)] w-[100vw] flex justify-center items-center flex-wrap-reverse  p-4 overflow-hidden"
         style={myStyle}
       >
-        <div className="leftPart flex flex-col lg:justify-center lg:items-start  w-[83vmin] pb-3 lg:h-[100vmin] sm:mt-[-4vmin]">
-          <p className="lg:mt-[8vmin] text-[12vmin] text-black pb-3 font-extrabold">
+        <div className="leftPart flex flex-col lg:justify-center lg:items-start  w-[100vw] lg:w-[83vmin] pb-3 lg:h-[100vmin] sm:mt-[-4vmin]">
+          <p className="text-[14vmin] lg:mt-[8vmin] lg:text-[12vmin] text-black pb-1 lg:pb-3 font-extrabold">
             Welcome To,
           </p>
 
-          <p className="text-[8.5vmin] text-black pb-3 font-medium mt-[-4vmin]">
+          <p className="text-[10vmin] lg:text-[8.5vmin] text-black pb-1 lg:pb-3 font-medium mt-[-4vmin]">
             Venture Linked
           </p>
-          <p className="text-[3.5vmin] text-black pb-3 font-medium mt-[-2vmin]">
+          <p className="text-[5vmin] lg:text-[3.5vmin] text-black pb-1 lg:pb-3 font-medium mt-[-2vmin]">
             Utility Software Solution
           </p>
-          <p className="text-[3vmin] lg:text-[2.75vmin] text-black pb-3 font-normal">
+          <p className="text-[4vmin] lg:text-[2.75vmin] text-black pb-1 lg:pb-3 font-normal">
             ( Connecting entrpreneurs evolving{" "}
             <span style={{ color: "black", fontWeight: "bold" }}> {text}</span>
             <span style={{ color: "black" }}>

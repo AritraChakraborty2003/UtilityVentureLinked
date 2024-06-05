@@ -1,11 +1,9 @@
 /* eslint-disable no-const-assign */
-import moment from "moment";
+
 import jsPDF from "jspdf";
 import Header from "./Header";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import HiringDocEmployee from "./HiringDocEmployee";
-import PartTime from "./PartTime";
 
 const NoticePage = () => {
   const [subject, setsubject] = useState("");

@@ -230,7 +230,6 @@ const MoMForm = () => {
                       <li>
                         Organized By{" "}
                         <select
-                          class="organizer"
                           id="organizer"
                           className="w-11/12 bg-slate-200 p-2 mt-1"
                         >

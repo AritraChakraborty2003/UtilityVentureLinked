@@ -1,8 +1,8 @@
 import moment from "moment";
 import { jsPDF } from "jspdf";
-import Header from "./Header";
+
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
 const PartTime = () => {
   const [uname, setuname] = useState("");
   const [joiningdate, setJoiningDate] = useState("");
@@ -292,7 +292,6 @@ const PartTime = () => {
                     <li>
                       Candidate Role:
                       <select
-                        class="role"
                         id="role"
                         className="w-11/12 bg-slate-200 p-2 mt-1"
                       >
@@ -345,7 +344,6 @@ const PartTime = () => {
                     <li>
                       Set Category{" "}
                       <select
-                        class="category"
                         id="category"
                         className="w-11/12 bg-slate-200 p-2 mt-1"
                       >

@@ -276,7 +276,6 @@ const HiringDoc = () => {
                         <li>
                           Candidate Role:
                           <select
-                            class="role"
                             id="role"
                             className="w-11/12 bg-slate-200 p-2 mt-1"
                           >
@@ -337,7 +336,6 @@ const HiringDoc = () => {
                         <li>
                           Set Category{" "}
                           <select
-                            class="category"
                             id="category"
                             className="w-11/12 bg-slate-200 p-2 mt-1"
                           >

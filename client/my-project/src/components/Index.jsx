@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import "./manage.css";
 import Header from "./Header";
 import { useState, useEffect } from "react";

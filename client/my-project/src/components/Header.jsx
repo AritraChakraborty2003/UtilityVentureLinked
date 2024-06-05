@@ -2,7 +2,6 @@
 /* eslint-disable no-const-assign */
 import { useState } from "react";
 import { Link } from "react-router-dom";
-/* eslint-disable jsx-a11y/alt-text */
 const Header = () => {
   const [notHidden, setnotHidden] = useState(false);
   return (

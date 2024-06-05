@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import { useNavigate } from "react-router-dom";

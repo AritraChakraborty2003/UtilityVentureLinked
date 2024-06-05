@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
   ];
   res.end(JSON.stringify(obj));
 });
-/*
+
 app.get("/reportsAPI/:id", (req, res) => {
   const query = req.query;
 
@@ -56,7 +56,7 @@ app.get("/reportsAPI/:id", (req, res) => {
     res.end(JSON.stringify(obj));
   }
 });
-*/
+
 app.listen("8000", (req, res) => {
   console.log("Backend connected");
 });

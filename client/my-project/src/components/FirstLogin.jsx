@@ -72,7 +72,9 @@ const FirstLogin = () => {
             <p className="text-xl mt-2 overflow-y-hidden font-bold">
               Login Form
             </p>
-            <p className="text-sm mt-1">( Login into utility dashboard )</p>
+            <p className="text-sm mt-1 pb-2">
+              ( Login into utility dashboard )
+            </p>
           </div>
 
           <form className="flex flex-col p-6 gap-y-4">

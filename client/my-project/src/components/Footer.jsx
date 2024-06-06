@@ -18,11 +18,11 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex flex-wrap justify-center  lg:w-[calc(100vw-50vmin)]">
-            <div className="w-[100vw] lg:w-[57vmin] mt-10 ">
-              <p className="lg:text-[4vmin] text-[6vmin] pt-2 font-bold text-white ml-3">
+            <div className="w-[100vw] lg:w-[50vmin] mt-10 ">
+              <p className="md:text-[4vmin] text-[6vmin] pt-2 font-bold text-white ml-3">
                 Quick Links
               </p>
-              <ul className="text-[4vmin] lg:text-[3vmin] mt-0 lg:mt-3  ml-3 space-y-2 ">
+              <ul className="text-[4vmin] md:text-[3vmin] mt-0 lg:mt-3  ml-3 space-y-2 ">
                 <li>Login</li>
                 <li>About</li>
                 <li>Our Team</li>
@@ -30,10 +30,10 @@ const Footer = () => {
               </ul>
             </div>
             <div className="w-[100vw] lg:w-[57vmin] mt-10 ">
-              <p className="lg:text-[4vmin] text-[6vmin] pt-2 font-bold text-white ml-3 ">
+              <p className="md:text-[4vmin] text-[6vmin] pt-2 font-bold text-white ml-3 ">
                 Contact
               </p>
-              <ul className="text-[5vmin] lg:text-[3vmin] mt-0 lg:mt-3  ml-3 space-y-2">
+              <ul className="text-[5vmin] md:text-[3vmin] mt-0 lg:mt-3  ml-3 space-y-2">
                 <li>Email: venturelink2024@gmail.com</li>
                 <li>Phone: +91 7585824862</li>
                 <li></li>

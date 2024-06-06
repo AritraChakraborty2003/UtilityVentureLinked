@@ -28,17 +28,17 @@ const First = () => {
         style={myStyle}
       >
         <div className="leftPart flex flex-col lg:justify-center lg:items-start  w-[100vw] sm:h-[40vh] lg:w-[83vmin] pb-3 pt-7 lg:h-[100vmin] lg:mt-[15vmin] sm:mt-[-4vmin]">
-          <p className="text-[14vmin] lg:mt-[8vmin] lg:text-[12vmin] text-black pb-1 lg:pb-3 font-extrabold">
+          <p className="text-[14vmin] lg:mt-[8vmin] md:text-[12vmin] text-black pb-1 lg:pb-3 font-extrabold">
             Welcome To,
           </p>
 
-          <p className="text-[10vmin] lg:text-[8.5vmin] text-black pb-1 lg:pb-3 font-medium mt-[-4vmin]">
+          <p className="text-[10vmin] md:text-[8.5vmin] text-black pb-1 lg:pb-3 font-medium mt-[-4vmin]">
             Venture Linked
           </p>
-          <p className="text-[5vmin] lg:text-[3.5vmin] text-black pb-1 lg:pb-3 font-medium mt-[-2vmin]">
+          <p className="text-[5vmin] md:text-[3.5vmin] text-black pb-1 lg:pb-3 font-medium mt-[-2vmin]">
             Utility Software Solution
           </p>
-          <p className="text-[4vmin] lg:text-[2.75vmin] text-black pb-1 lg:pb-3 font-normal">
+          <p className="text-[4vmin] md:text-[2.75vmin] text-black pb-1 lg:pb-3 font-normal">
             ( Connecting entrpreneurs evolving{" "}
             <span style={{ color: "black", fontWeight: "bold" }}> {text}</span>
             <span style={{ color: "black" }}>
@@ -66,8 +66,8 @@ const First = () => {
             </button>
           </div>
         </div>
-        <div className="rightPart lg:mt-[15vmin]  w-[70vmin] lg:h-[100vmin] lg:p-10  flex justify-center items-center">
-          <div className="mt-[3vmin] lg:mt-[15vmin]  lg:ml-[4vmin]  imgHolder h-[65vmin] w-[90vw] lg:w-[80vmin] lg:h-[55vmin] 2xl:mt-[10vmin]">
+        <div className="rightPart md:mt-[15vmin]  w-[70vmin] lg:h-[100vmin] lg:p-10  flex justify-center items-center">
+          <div className="mt-[3vmin] md:mt-[15vmin]  lg:ml-[4vmin]  imgHolder h-[65vmin] w-[90vw] md:w-[60vmin] md:h-[55vmin] 2xl:mt-[10vmin]">
             <img
               src="./startup.png"
               className="max-w-full max-h-full object-contain"

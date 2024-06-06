@@ -34,6 +34,10 @@ const fileConfig = new mongoose.Schema(
       type: String,
       required: true,
     },
+    title: {
+      type: String,
+      required: true,
+    },
     image: {
       type: String,
       required: true,
@@ -98,9 +102,10 @@ app.get("/reportsAPI/:id", (req, res) => {
 });
 app.post("/filesAPI", upload.single("file"), (req, res) => {
   let rid = req.body.rid;
-  let type = req.body.name;
+  let type = req.body.type;
   let image = req.file.filename;
-  let NewFile = new files({ rid: rid, type: type, image: image });
+  let title = req.body.title;
+  let NewFile = new files({ rid: rid, type: type, title: title, image: image });
   NewFile.save();
 });
 app.get("/filesAPI", (req, res) => {

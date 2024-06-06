@@ -9,6 +9,8 @@ import Teampage from "./components/Teampage";
 import FirstLogin from "./components/FirstLogin";
 import TechnicalDoc from "./components/TechnicalDoc";
 import HiringDoc from "./components/Hiringdoc";
+import FilesAdd from "./components/FilesAdd";
+import AboutPage from "./components/AboutPage";
 import HiringDocEmployee from "./components/HiringDocEmployee";
 import SmallMeeting from "./components/SmallMeeting";
 import NoticePage from "./components/NoticePage";
@@ -24,11 +26,13 @@ function App() {
         <Route path="/Footer" element={<Footer />}></Route>
         <Route path="/MoMForm" element={<MoMForm />}></Route>
         <Route path="/TerminatePage" element={<TerminatePage />}></Route>
+        <Route path="/AboutPage" element={<AboutPage />}></Route>
         <Route path="/HireEmployee" element={<HiringDocEmployee />}></Route>
         <Route path="/HireForm" element={<HiringDoc />}></Route>
         <Route path="/SmallMeeting" element={<SmallMeeting />}></Route>
         <Route path="/FirstLogin" element={<FirstLogin />}></Route>
         <Route path="/Uidoc" element={<UiDoc />}></Route>
+        <Route path="/FilesAdd" element={<FilesAdd />}></Route>
         <Route path="/technicalDoc" element={<TechnicalDoc />}></Route>
         <Route path="/Team" element={<Teampage />}></Route>
       </Routes>

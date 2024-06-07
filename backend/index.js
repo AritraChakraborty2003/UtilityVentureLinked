@@ -8,6 +8,7 @@ import fs from "fs";
 dotenv.config();
 const app = express();
 app.use(express.json());
+app.set("trust proxy", true);
 app.use(express.static("uploads"));
 app.use(cors());
 var storage = multer.diskStorage({

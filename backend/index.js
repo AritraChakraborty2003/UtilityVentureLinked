@@ -8,11 +8,12 @@ import fs from "fs";
 import { request } from "http";
 import requestIp from "request-ip";
 dotenv.config();
-app.use(requestIp.mw());
 
 const app = express();
 app.use(express.json());
 app.use(express.static("uploads"));
+app.use(requestIp.mw());
+
 app.use(cors());
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {

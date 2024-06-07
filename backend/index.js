@@ -78,7 +78,7 @@ const reports1 = mongoose.model("Reports", reportConfig);
 const files = mongoose.model("Files", fileConfig);
 app.get("/", (req, res) => {
   const ip = req.ip;
-  console.log(geoip(ip));
+  console.log(geoip.lookup(ip));
   res.send(ip);
 });
 

@@ -6,7 +6,10 @@ import path from "path";
 import mongoose from "mongoose";
 import fs from "fs";
 import { request } from "http";
+import requestIp from "request-ip";
 dotenv.config();
+app.use(requestIp.mw());
+
 const app = express();
 app.use(express.json());
 app.use(express.static("uploads"));
@@ -70,10 +73,8 @@ mongoose.connect(`${process.env.MONGODB_URI}`);
 const reports1 = mongoose.model("Reports", reportConfig);
 const files = mongoose.model("Files", fileConfig);
 app.get("/", (req, res) => {
-  const ip = req.connection.remoteAddress;
-  return res.json({
-    ip,
-  });
+  const ip = req.clientIp;
+  res.end(ip);
 });
 
 app.get("/reportsAPI/:id", (req, res) => {

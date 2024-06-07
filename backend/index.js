@@ -71,7 +71,7 @@ const reports1 = mongoose.model("Reports", reportConfig);
 const files = mongoose.model("Files", fileConfig);
 app.get("/", (req, res) => {
   const ip =
-    req.headers["cf-connecting"] ||
+    req.headers["cf-connecting-ip"] ||
     req.headers["x-real-ip"] ||
     req.headers["x-forwarded-for"] ||
     req.socket.remoteAddress ||

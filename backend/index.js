@@ -5,10 +5,10 @@ import multer from "multer";
 import path from "path";
 import mongoose from "mongoose";
 import fs from "fs";
+import { request } from "http";
 dotenv.config();
 const app = express();
 app.use(express.json());
-app.set("trust proxy", true);
 app.use(express.static("uploads"));
 app.use(cors());
 var storage = multer.diskStorage({
@@ -70,14 +70,15 @@ mongoose.connect(`${process.env.MONGODB_URI}`);
 const reports1 = mongoose.model("Reports", reportConfig);
 const files = mongoose.model("Files", fileConfig);
 app.get("/", (req, res) => {
-  const ip = req.ip;
-
-  const obj = {
-    endoint: "indexPage",
-    ip: ip,
-    time: Date.now(),
-  };
-  res.send(JSON.stringify(obj));
+  const ip =
+    req.headers["cf-connecting"] ||
+    req.headers["x-real-ip"] ||
+    req.headers["x-forwarded-for"] ||
+    req.socket.remoteAddress ||
+    "";
+  return res.json({
+    ip,
+  });
 });
 
 app.get("/reportsAPI/:id", (req, res) => {

@@ -70,7 +70,7 @@ mongoose.connect(`${process.env.MONGODB_URI}`);
 const reports1 = mongoose.model("Reports", reportConfig);
 const files = mongoose.model("Files", fileConfig);
 app.get("/", (req, res) => {
-  const ip = req.headers["x-forwarded-for"];
+  const ip = req.connection.remoteAddress;
   return res.json({
     ip,
   });

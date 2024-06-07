@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import multer from "multer";
+import geoip from "geoip-lite";
 import path from "path";
 import mongoose from "mongoose";
 import fs from "fs";
@@ -77,7 +78,7 @@ const reports1 = mongoose.model("Reports", reportConfig);
 const files = mongoose.model("Files", fileConfig);
 app.get("/", (req, res) => {
   const ip = req.ip;
-  console.log(req);
+  console.log(geoip(ip));
   res.send(ip);
 });
 

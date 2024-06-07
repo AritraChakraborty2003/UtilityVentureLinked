@@ -69,12 +69,14 @@ mongoose.connect(`${process.env.MONGODB_URI}`);
 const reports1 = mongoose.model("Reports", reportConfig);
 const files = mongoose.model("Files", fileConfig);
 app.get("/", (req, res) => {
-  const obj = [
-    {
-      name: "Hello",
-    },
-  ];
-  res.end(JSON.stringify(obj));
+  const ip = req.ip;
+
+  const obj = {
+    endoint: "indexPage",
+    ip: ip,
+    time: Date.now(),
+  };
+  res.send(JSON.stringify(obj));
 });
 
 app.get("/reportsAPI/:id", (req, res) => {

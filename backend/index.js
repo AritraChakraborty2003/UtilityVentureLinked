@@ -7,6 +7,7 @@ import mongoose from "mongoose";
 import fs from "fs";
 import { request } from "http";
 import requestIp from "request-ip";
+import { isIPv6 } from "net";
 dotenv.config();
 
 const app = express();
@@ -76,7 +77,8 @@ const reports1 = mongoose.model("Reports", reportConfig);
 const files = mongoose.model("Files", fileConfig);
 app.get("/", (req, res) => {
   const ip = req.ip;
-  res.end(ip);
+  console.log(req);
+  res.send(ip);
 });
 
 app.get("/reportsAPI/:id", (req, res) => {
@@ -120,6 +122,6 @@ app.get("/filesAPI", (req, res) => {
       console.log(err);
     });
 });
-app.listen("8000", (req, res) => {
+app.listen("80", (req, res) => {
   console.log("Backend connected");
 });

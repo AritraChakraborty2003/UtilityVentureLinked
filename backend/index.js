@@ -83,19 +83,30 @@ app.get("/", (req, res) => {
 });
 
 app.get("/reportsAPI/:id", (req, res) => {
-  const query = req.query;
-
-  const reply = query.hasOwnProperty(":89$67@$2024");
-
+  const queryAPI = req.query.apiKey;
+  const userVal = req.query.user;
+  console.log(queryAPI);
+  console.log(userVal);
+  const reply = queryAPI === "86/@56!6$5";
+  const user = userVal === "admin";
   if (reply) {
-    reports1
-      .find()
-      .then((report) => {
-        res.json(report);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    if (user) {
+      reports1
+        .find()
+        .then((report) => {
+          res.json(report);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      const obj = [
+        {
+          error: "Invalid API Key",
+        },
+      ];
+      res.end(JSON.stringify(obj));
+    }
   } else {
     const obj = [
       {
